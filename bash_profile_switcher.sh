@@ -29,7 +29,7 @@
 ### GENERAL CONFIGURATION ###
 
 # Setup default directory
-export SWITCH_PROFILE_DIRECTORY=".bash_profile.d"
+export SWITCH_PROFILE_DIRECTORY="${SWITCH_PROFILE_HOME_DIRECTORY:-.bash_profile.d}"
 [[ -d "$HOME/$SWITCH_PROFILE_DIRECTORY" ]] || mkdir "$HOME/$SWITCH_PROFILE_DIRECTORY"
 [[ -d "$HOME/$SWITCH_PROFILE_DIRECTORY/snippets" ]] || mkdir "$HOME/$SWITCH_PROFILE_DIRECTORY/snippets"
 
